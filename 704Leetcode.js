@@ -24,7 +24,7 @@ const expected2 = -1
 // Explanation: 2 does not exist in nums so return -1
 
 var search = function(nums, target) {
-    let left = nums[0];
+    let left = 0;
     let right = nums[nums.length-1]
     // cut the array in half by it's indexes and floor it in the case the amount of indexes is even
     let midpoint = Math.floor(nums.length / 2);
